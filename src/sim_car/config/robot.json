@@ -1,0 +1,15 @@
+{
+  "length": 0.570, "width": 0.520, "height": 0.3228,
+  "wheelbase": 0.450, "track": 0.400, "ground_clearance": 0.040,
+  "wheel_radius": 0.070, "wheel_width": 0.055,
+  "max_wheel_speed": 1.5, "linear_acceleration": 1.0,
+  "angular_acceleration": 3.141592653589793,
+  "command_angular_limit": 1.0, "steer_rate": 1.5707963267948966,
+  "notes": {
+    "source": "CN SLAMTEC Poseidon Standard Edition_datasheet_v1.2.1-260904.pdf",
+    "geometry": "wheelbase/track from figure 1/2; assumed equal to steering pivot spacing; height from figure 1",
+    "assumptions": "wheel_radius, wheel_width, steer_rate estimated; steering assumed continuous, zero pivot offset; max_wheel_speed uses chassis straight-line maximum as a provisional per-wheel limit",
+    "limits": "1 rad/s is rated body angular velocity, used as conservative command limit, not manufacturer maximum",
+    "model": "flat ground, no slip, rigid suspension; steering transitions stop drive until all wheels align"
+  }
+}
