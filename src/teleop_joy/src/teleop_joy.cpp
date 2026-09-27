@@ -202,6 +202,8 @@ void Teleop::callback(const sensor_msgs::msg::Joy::SharedPtr joy)
         this->set_parameter(rclcpp::Parameter("usr_task", tmp_));
     }
 
+    // test 
+
     if (joy->buttons[6] == 1)
     {
         // left,right
